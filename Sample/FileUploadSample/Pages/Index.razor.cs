@@ -23,7 +23,7 @@ namespace FileUploadSample.Pages
     {
 
         #region Private Variables
-        private List<string> status = new List<string>();
+        private List<string> status = new();
         private MarkupString xmlString;
         private List<XmlLine> lines;
         #endregion
@@ -98,7 +98,7 @@ namespace FileUploadSample.Pages
                                     if (TextHelper.Exists(line.Text))
                                     {
                                         // cast the XmlLine as a Line
-                                        XmlLine xmlLine = new XmlLine();
+                                        XmlLine xmlLine = new();
 
                                         // Set the properties
                                         xmlLine.Text = line.Text;
@@ -119,16 +119,16 @@ namespace FileUploadSample.Pages
                                 }
 
                                 // Make sure we indent
-                                this.Lines[this.Lines.Count - 1].Indent = false;
+                                this.Lines[Lines.Count - 1].Indent = false;
                             }
                         }
                     }
                 }
                 catch (Exception error)
-                {   
-                    // for debugging only for this sample
-                    string err = error.ToString();
-                }
+                {
+                // for debugging only for this sample
+                _ = error.ToString();
+            }
                 finally
                 {
                     // Might be needed ?

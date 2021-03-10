@@ -167,9 +167,9 @@ Update 1.0.6-Preview: I decided to return more information about the file instea
 
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Components" Version="5.0.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="5.0.0" />
-    <PackageReference Include="System.Drawing.Common" Version="5.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Components" Version="5.0.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="5.0.4" />
+    <PackageReference Include="System.Drawing.Common" Version="5.0.2" />
   </ItemGroup>
 
 

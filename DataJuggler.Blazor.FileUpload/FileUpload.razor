@@ -1,4 +1,3 @@
-
 <style>
     .progressbar
     {
@@ -13,9 +12,9 @@
     @if (ShowCustomButton)
     {
         <label>
-
             <InputFile InputFileClassName="@InputFileClassName" OnChange="OnFileChange" Visible="@Visible" accept="@AllowedExtensions" multiple="@MultipleFiles" />
             <span class="@CustomButtonClassName">
+                <span class="@CustomButtonTextClassName">@ButtonText</span>
             </span>
         </label>
     }
@@ -28,8 +27,9 @@
     @if (ProgressVisible)
     {
         <div class="progressbar">
+
         </div>
-    }   
+    }
 }
 else if (ShowResetButton)
 {
@@ -40,4 +40,3 @@ else if (ShowResetButton)
 {
     <p class="@MessageClassName">@status</p>
 }
-

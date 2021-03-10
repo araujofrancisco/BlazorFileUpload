@@ -62,7 +62,7 @@ namespace DataJuggler.Blazor.FileUpload
             /// <summary>
             /// This method returns the Extension
             /// </summary>
-            public string GetExtension(string fileName)
+            public static string GetExtension(string fileName)
             {
                 // initial value
                 string extension = "";
@@ -77,7 +77,7 @@ namespace DataJuggler.Blazor.FileUpload
                     if (index >= 0)
                     {
                         // set the extension
-                        extension = fileName.Substring(index);
+                        extension = fileName[index..];
                     }
                 }
                 
